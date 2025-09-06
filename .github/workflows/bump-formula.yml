@@ -1,0 +1,19 @@
+name: Bump formula
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: write
+
+on:
+  workflow_dispatch:
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dawidd6/action-homebrew-bump-formula@v5
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          formula: quickmark-cli
+          tap: ekropotin/tap
