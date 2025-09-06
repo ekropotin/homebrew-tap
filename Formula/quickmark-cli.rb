@@ -1,5 +1,5 @@
 class QuickmarkCli < Formula
-  desc "Lightning-fast Markdown/CommonMark linter CLI tool with tree-sitter based parsing"
+  desc "Lightning-fast Markdown/CommonMark linter CLI tool"
   homepage "https://github.com/ekropotin/quickmark"
   license "MIT"
 
