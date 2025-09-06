@@ -17,6 +17,10 @@ class QuickmarkCli < Formula
     bin.install "qmark"
   end
 
+  on_linux do
+    odie "quickmark-cli for Linux is on available on brew. Please install via cargo"
+  end
+
   test do
     # Create a test markdown file
     (testpath/"test.md").write("# Test\n\nThis is a test.")
